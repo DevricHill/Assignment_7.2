@@ -159,7 +159,7 @@ namespace Assignment_7._2
 
             foreach (char ch in target)
             {
-                if (!words.Contains(ch) && target.Length > word.Length) return false;
+                if (!words.Contains(ch) || target.Length > word.Length) return false;
             }
 
             return true;
